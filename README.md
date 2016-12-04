@@ -1,1 +1,5 @@
-this is a morse code transcriber written in pure data vanilla. work still very much in progress, more to come...
+All vanilla objects, GPL v2
+
+dkmorset~ - morse code transcriber
+
+(thinking of adding morse code amplitude generator)
