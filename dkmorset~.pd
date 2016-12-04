@@ -1,4 +1,4 @@
-#N canvas 581 194 868 655 12;
+#N canvas 575 200 843 821 12;
 #N canvas 565 268 1302 747 hittimer 0;
 #X obj 85 220 sel 0 1;
 #X obj 67 326 timer;
@@ -228,17 +228,12 @@
 #X text 23 521 everything < long_hit_dur ms is a short hit;
 #X text 23 604 if not hits for word space ms \, new word;
 #X text 45 565 and output (space);
-#X obj 425 347 cnv 15 400 150 empty empty INLETS 20 12 0 14 -204786
+#X obj 425 308 cnv 15 400 150 empty empty INLETS 20 12 0 14 -204786
 -66577 0;
-#X text 433 393 4: long hit dur (ms) \, 5: letter space (ms);
-#X text 434 416 6: word space (ms);
-#X text 433 371 1: sig \, 2: high db^4 thresh \, 3: low db^4 thresh
+#X text 433 354 4: long hit dur (ms) \, 5: letter space (ms);
+#X text 434 377 6: word space (ms);
+#X text 433 332 1: sig \, 2: high db^4 thresh \, 3: low db^4 thresh
 ;
-#X obj 426 442 cnv 15 400 150 empty empty ARGS 20 12 0 14 -261234 -66577
-0;
-#X text 439 498 3: long hit dur (ms) \, 4: letter space (ms);
-#X text 440 519 5: word space (ms);
-#X text 441 476 1: high db^4 thresh \, 2: low db^4 thresh;
 #X obj 16 4 cnv 15 300 30 empty empty DKMORSET~ 20 12 0 14 -203904
 -66577 0;
 #X text 122 5 morse code transcriber;
@@ -246,6 +241,14 @@
 0;
 #X text 664 15 Derek Kwan: 2016;
 #X text 663 33 GPL v2;
+#X obj 426 403 cnv 15 400 150 empty empty OUTLETS 20 12 0 14 -261682
+-66577 0;
+#X obj 426 499 cnv 15 400 150 empty empty ARGS 20 12 0 14 -261234 -66577
+0;
+#X text 439 555 3: long hit dur (ms) \, 4: letter space (ms);
+#X text 440 576 5: word space (ms);
+#X text 441 533 1: high db^4 thresh \, 2: low db^4 thresh;
+#X text 439 424 1 on/off trigger \, 2 letter \, 3 word;
 #X connect 0 0 15 0;
 #X connect 0 1 1 0;
 #X connect 1 0 2 0;
